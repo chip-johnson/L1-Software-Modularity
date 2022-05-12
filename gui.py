@@ -10,12 +10,12 @@ CS = VSCode.dark
 
 # TODO: Here is where we need to create the object that represents our "display"
 # This is the screen where we want our graphical user interface (GUI) to appear.
-display = 
+display = PygameDisplay(WIDTH,HEIGHT)
 
 gui = UniGui(WIDTH, HEIGHT, colorscheme=CS)
 
 tw = TextWidget("tw", 0, 0, WIDTH, HEIGHT, colorscheme=CS)
-tw.set_value("hello world!")
+tw.set_value("MY NAME IS CHIP")
 gui.add_widget(tw)
 
 display.show(gui)
